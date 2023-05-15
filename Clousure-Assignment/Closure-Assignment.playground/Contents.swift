@@ -46,9 +46,12 @@ print(bookMap)
 let ageFilter = allBooks.filter() {$0.readingAge >= 16}
 print(ageFilter)
 
-var lookBook = allBooks.contains{Book in
-    return Book.title == "Mario"}
-print(lookBook)
+//var lookBook = allBooks.contains{Book in
+//    return Book.title == "Mario"}
+var booksearch = allBooks.contains() {$0.title == "Past waves"}
+print (booksearch)
+
+//print(lookBook)
 //let cost = allBooks.reduce("") {$0 + $1}
 
 //let sum = reduce(allBooks) { (price: Int, next: Int} in
